@@ -39,9 +39,10 @@ function getLastGroceryItem(groceries: string[]): string {
 
 // Step 5:
 // Write a removeLastGroceryItem function that removes the last grocery item and return it
-function removeLastGroceryItem(groceries: string[]): string | undefined {
+function removeLastGroceryItem(groceries: string[]): string {
   // write your code here...
   let removedGrocery = groceries.pop();
+  if (removedGrocery === undefined) return "";
   return removedGrocery; // replace empty string with what you see is fit
 }
 
